@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Font';
+  src: url('assets/NotoSansArabic-SemiBold.ttf');
+}
+
+* {
+  font-family: 'Font', Arial, sans-serif;
+  box-sizing: border-box;
+  color:white;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, black 100%),
+    url('assets/background.webp') no-repeat center center fixed;
+  background-size: cover;
+  color-scheme: dark;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  width: 60%;
+}
+
+.middle-text {
+  max-width: 60%;
+}
+
+.bottom {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}

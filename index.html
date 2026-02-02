@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phi Portfolio</title>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/icon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/icon/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/icon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/icon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/icon/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="assets/icon/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="assets/icon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="assets/icon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="assets/icon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="assets/icon/mstile-310x310.png" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/card-size.css">
+  <link rel="stylesheet" href="style/cursor.css">
+</head>
+<body>
+<header class="topbar topbar-compact">
+  <div class="bidi-line subtitle" id="brandSubtitle" aria-label="Brand subtitle">
+        <span class="lang-ar" dir="rtl">اضغط للمزيد من المعلومات.</span>
+    <div class="brand">
+      <img class="logo" id="logoButton" src="assets/pen/pen.webp" alt="Phi logo" role="button" tabindex="0" aria-label="Open Phi window"/>
+    </div>
+      <span class="lang-en subtitle-en" dir="ltr">click for more info.</span>
+  </div>
+</header>
+<div class="controls controls-center">
+  <div class="circle-filters" id="circleFilters" title="Platform filters">
+    <div class="circle-row" id="platformButtons"></div>
+    <br>
+    <div id="langButtons" class="circle-row"></div>
+  </div>
+</div>
+  <main class="container">
+    <section class="summary">
+      <div class="summary-card">
+        <h3 id="activeLabel" class="bidi-line">
+          <span class="lang-en" dir="ltr">Being worked on</span>
+          <span class="lang-ar" dir="rtl">على قيد العمل</span>
+        </h3>
+        <div class="center"><br><p id="activeCount">0</p></div>
+      </div>
+      <div class="summary-card">
+        <h3 data-i18n="completed" class="bidi-line">
+          <span class="lang-en" dir="ltr">Completed</span>
+          <span class="lang-ar" dir="rtl">مكتمل</span>
+        </h3>
+        <div class="center"><br><p id="completedCount">0</p></div>
+      </div>
+      <div class="summary-card">
+        <h3 id="platformLabel" class="bidi-line">
+          <span class="lang-en" dir="ltr">Current Project</span>
+          <span class="lang-ar" dir="rtl">المشروع الحالي</span>
+        </h3>
+        <div class="center"><br><p>Ayakashibito</p></div>
+      </div>
+    </section>
+    <section>
+      <h2 class="bidi-line" style="margin:0 0 10px 0">
+        <span class="lang-en" dir="ltr">Completed</span>
+        <span class="lang-ar" dir="rtl">مكتمل</span>
+      </h2>
+      <section class="projects" id="completedContainer" data-view="cards"></section>
+    </section>
+    <hr>
+    <section style="margin-top:22px">
+      <h2 class="bidi-line" style="margin:0 0 10px 0">
+        <span class="lang-en" dir="ltr">Stailled</span>
+        <span class="lang-ar" dir="rtl">معطلة</span>
+      </h2>
+      <section class="projects" id="projectsContainer" data-view="cards"></section>
+    </section>
+    <hr>
+    <section style="margin-top:22px">
+      <h2 class="bidi-line" style="margin:0 0 10px 0">
+        <span class="lang-en" dir="ltr">Being worked on</span>
+        <span class="lang-ar" dir="rtl">على قيد العمل</span>
+      </h2>
+      <section class="projects" id="activeContainer" data-view="cards"></section>
+    </section>
+  </main>
+  <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <br><br>
+      <button id="modalClose" class="modal-close" aria-label="Close window">✕</button>
+      <header class="modal-header">
+        <h2 id="modalTitle" class="bidi-line">
+          <span class="lang-en" dir="ltr">Project</span>
+          <span class="lang-ar" dir="rtl">المشروع</span>
+        </h2>
+        <div class="modal-meta" id="modalPlatform"></div>
+      </header>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

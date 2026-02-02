@@ -1,0 +1,132 @@
+html,
+body {
+  cursor:
+    url("../assets/pointer/PointerP1.svg") 12 12,
+    url("../assets/pointer/PointerP1.png") 12 12,
+    default;
+}
+
+a,
+button,
+.logo,
+.project-card,
+.circle-btn,
+.fab-main,
+.fab-item,
+.modal-close,
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  cursor:
+    url("../assets/pointer/HandOpenP1.svg") 12 12,
+    url("../assets/pointer/HandOpenP1.png") 12 12,
+    pointer;
+}
+
+a:active,
+button:active,
+.logo:active,
+.project-card:active,
+.circle-btn:active,
+.fab-main:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  cursor:
+    url("../assets/pointer/HandClosedP1.svg") 12 12,
+    url("../assets/pointer/HandClosedP1.png") 12 12,
+    pointer;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  cursor: text;
+}
+
+[disabled],
+[aria-disabled="true"] {
+  cursor:
+    url("../assets/pointer/PointerP1.svg") 12 12,
+    url("../assets/pointer/PointerP1.png") 12 12,
+    not-allowed;
+}
+
+.project-card[draggable="true"] {
+  cursor: grab;
+}
+
+.project-card[draggable="true"]:active {
+  cursor: grabbing;
+}
+
+
+html,
+body {
+  cursor:
+    url("../assets/pointer/PointerP1.svg") 12 12,
+    url("../assets/pointer/PointerP1.png") 12 12,
+    default;
+}
+
+a,
+button,
+.logo,
+.project-card,
+.circle-btn,
+.lang-btn,
+.fab-main,
+.fab-item,
+.modal-close,
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  cursor:
+    url("../assets/pointer/HandOpenP1.svg") 12 12,
+    url("../assets/pointer/HandOpenP1.png") 12 12,
+    pointer;
+}
+
+a:active,
+button:active,
+.logo:active,
+.project-card:active,
+.circle-btn:active,
+.lang-btn:active,
+.fab-main:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  cursor:
+    url("../assets/pointer/HandClosedP1.svg") 12 12,
+    url("../assets/pointer/HandClosedP1.png") 12 12,
+    pointer;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea {
+  cursor: text;
+}
+
+[disabled],
+[aria-disabled="true"] {
+  cursor:
+    url("../assets/pointer/PointerP1.svg") 12 12,
+    url("../assets/pointer/PointerP1.png") 12 12,
+    not-allowed;
+}
+
+.project-card[draggable="true"] {
+  cursor: grab;
+}
+
+.project-card[draggable="true"]:active {
+  cursor: grabbing;
+}
